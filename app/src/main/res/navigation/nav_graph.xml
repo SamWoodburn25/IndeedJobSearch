@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="edu.quinnipiac.ser210.jobsearch.HomeFragment"
+        android:label="Indeed Job Search"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_allJobFragment2"
+            app:destination="@id/allJobFragment2" />
+        <action
+            android:id="@+id/action_homeFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/allJobFragment2"
+        android:name="edu.quinnipiac.ser210.jobsearch.AllJobFragment"
+        android:label="Indeed Job Search"
+        tools:layout="@layout/fragment_all_job">
+        <argument
+            android:name="searchQuery"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_allJobFragment2_to_helpFragment"
+            app:destination="@id/helpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="edu.quinnipiac.ser210.jobsearch.HelpFragment"
+        android:label="Indeed Job Search"
+        tools:layout="@layout/fragment_help" />
+</navigation>

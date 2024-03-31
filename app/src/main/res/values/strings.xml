@@ -1,0 +1,11 @@
+<resources>
+    <string name="header">Indeed Job Search</string>
+
+    <string-array name="locations">
+        <item>Location</item>
+        <item>Chicago, IL</item>
+        <item>Brooklyn, NY</item>
+        <item>Miami, FL</item>
+    </string-array>
+
+</resources>
